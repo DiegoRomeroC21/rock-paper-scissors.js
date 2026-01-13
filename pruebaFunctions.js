@@ -36,10 +36,12 @@ else if (computerChoice === 'rock'){return 'user wins'}}
 //debajo se define tijeras
 if (userChoice === 'scissors'){if (computerChoice === 'rock'){return 'computer wins'}
 else if (computerChoice === 'paper'){return 'user wins'}
-}}
+}
+if (userChoice === 'bomb'){return 'CHEAT CODE ENABLED, USER WINSS!!!'}
+
+}
 //funcion para que cada funcion previa haga su parte en el resultado final
 function playGame(userChoice){
-let userChoice = getUserChoice()
 console.log(userChoice)
 let computerChoice = getComputerChoice()
 console.log(computerChoice)
@@ -47,4 +49,4 @@ console.log(determineWinner(userChoice,computerChoice)
 )
 }
 //juego
-playGame(getUserChoice('paper'))
+playGame('bomb')
